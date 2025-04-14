@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Digital Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Islamic Digital Wallet</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header><section id="home">
+    <h2>Welcome to Your Shariah-Compliant Digital Wallet</h2>
+    <p>Secure, interest-free, and fully compliant with Islamic finance principles.</p>
+    <button onclick="openSignup()">Get Started</button>
+</section>
+
+<section id="features">
+    <h2>Key Features</h2>
+    <ul>
+        <li>Secure User Authentication</li>
+        <li>Shariah-Compliant Transactions</li>
+        <li>Instant Money Transfers</li>
+        <li>Zakat & Sadaqah Integration</li>
+        <li>Islamic Investments</li>
+        <li>Transaction History</li>
+        <li>QR Payments</li>
+        <li>Withdrawal Requests</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <p>Halal financial solutions for savings, investments, and payments.</p>
+</section>
+
+<section id="signup">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+<section id="dashboard">
+    <h2>Dashboard</h2>
+    <p>Welcome, <span id="userName">User</span>!</p>
+    <h3>Your Balance: <span id="balance">$1000</span></h3>
+    <button onclick="sendMoney()">Send Money</button>
+    <button onclick="donateZakat()">Donate Zakat</button>
+    <button onclick="requestWithdrawal()">Request Withdrawal</button>
+    <button onclick="scanQR()">Scan QR Payment</button>
+</section>
+
+<section id="investment">
+    <h2>Islamic Investment Opportunities</h2>
+    <p>Explore Shariah-compliant investment options and grow your wealth ethically.</p>
+    <button onclick="investNow()">Invest Now</button>
+</section>
+
+<section id="transaction-history">
+    <h2>Transaction History</h2>
+    <ul id="history-list">
+        <li>No transactions yet.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Islamic Digital Wallet. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
