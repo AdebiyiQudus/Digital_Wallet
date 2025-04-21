@@ -11,7 +11,7 @@ function openSignup() {
 function sendMoney() {
   let history = document.getElementById('history-list');
   let newTransaction = document.createElement('li');
-  
+
   newTransaction.innerText = 'Sent $100 to another user';
   history.appendChild(newTransaction);
   alert('Money sent successfully!');
@@ -20,6 +20,7 @@ function sendMoney() {
 function donateZakat() {
   let history = document.getElementById('history-list');
   let newTransaction = document.createElement('li');
+  
   newTransaction.innerText = 'Donated $50 as Zakat';
   history.appendChild(newTransaction);
   alert('Zakat donation successful!');
