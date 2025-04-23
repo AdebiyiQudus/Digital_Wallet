@@ -20,7 +20,7 @@ function sendMoney() {
 function donateZakat() {
   let history = document.getElementById('history-list');
   let newTransaction = document.createElement('li');
-  
+
   newTransaction.innerText = 'Donated $50 as Zakat';
   history.appendChild(newTransaction);
   alert('Zakat donation successful!');
@@ -31,6 +31,7 @@ function requestWithdrawal() {
   if (amount && !isNaN(amount)) {
       let history = document.getElementById('history-list');
       let newTransaction = document.createElement('li');
+      
       newTransaction.innerText = `Requested withdrawal of $${amount}`;
       history.appendChild(newTransaction);
       alert('Withdrawal request submitted!');
